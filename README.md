@@ -19,6 +19,8 @@ You can choose between these options:
 * Download the pre-built binary [from the release page](https://github.com/Stridsvagn69420/pi-fanctl/releases/latest). (recommended)
 * Build it from source. (recommended for customized layouts)
 
+<hr>
+
 As the other options are straightforwards, this section describes how to build it from source. You'll need in addition to `pigpio`:
 * A C compiler like `gcc`.
 * `git` for cloning the source code.
