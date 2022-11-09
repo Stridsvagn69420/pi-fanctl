@@ -2,9 +2,9 @@
 -pigpio as the GPIO library
 
 -Button Pins: SCL and GND
--Shutdown command location: /proc/sys/kernel/poweroff_cmd
+-Shutdown command: poweroff
 
 -Status LED Pins: TxD and GND
 -/boot/config.txt entry: enable_uart=1
 
--3.3V PWM signal switches a 5V source, either via a BJT or MOSFET (depending on what I have lying around)
+-3.3V PWM signal switches a 5V source with a MOSFET
