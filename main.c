@@ -3,7 +3,7 @@
 
 int main() {
 	printf("pi-fanctl is still WIP\n");
-	int cpu = cpu_temp();
+	int cpu = round_temp();
 	printf("%i°C\n", cpu);
 	return 0;
 }

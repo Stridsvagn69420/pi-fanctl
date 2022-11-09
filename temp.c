@@ -18,3 +18,9 @@ float cpu_temp() {
         int temp = raw_temp();
         return temp / 1000;
 }
+
+// Gets the CPU temperature and rounds it to a integer in °C
+int round_temp() {
+        float temp = cpu_temp();
+        return round(temp);
+}
