@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include "temp.h"
 
 int main() {
 	printf("pi-fanctl is still WIP\n");
-	float cpu = cpu_temp();
-	printf("%f", cpu);
+	int cpu = cpu_temp();
+	printf("%i°C\n", cpu);
 	return 0;
 }
