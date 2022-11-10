@@ -2,8 +2,9 @@
 #include "temp.h"
 
 int main() {
-	printf("pi-fanctl is still WIP\n");
-	int cpu = round_temp();
+	FILE *p = open_temp();
+	int cpu = cpu_temp(p);
 	printf("%i°C\n", cpu);
+	fclose(p);
 	return 0;
 }

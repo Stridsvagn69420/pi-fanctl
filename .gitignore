@@ -2,3 +2,4 @@
 a.out
 /build/
 pi-fanctl
+*.h.gch

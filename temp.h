@@ -5,13 +5,10 @@
 #include <math.h>
 #include "consts.h"
 
-// Reads the CPU_TEMP_FILE and casts the string to an int
-int raw_temp();
+// Opens the CPU_TEMP_FILE in read-only mode
+FILE* open_temp();
 
-// Reads the CPU_TEMP_FILE and converts it to a decimal number in °C
-float cpu_temp();
-
-// Gets the CPU temperature and rounds it to a integer in °C
-int round_temp();
+// Reads the CPU temperature file and returns it in °C
+int cpu_temp(FILE *p);
 
 #endif
