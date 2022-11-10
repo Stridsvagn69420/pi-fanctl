@@ -15,5 +15,7 @@
 #define CPU_TEMP_FILE "/sys/class/thermal/thermal_zone0/temp"
 // Temperature file digit length
 #define CPU_TEMP_FILE_DIGITS 5
+// Custom temperature file path environment
+#define CPU_TEMP_FILE_ENV "CPU_TEMP"
 
 #endif
