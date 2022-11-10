@@ -1,2 +1,10 @@
 #!/bin/sh
-gcc -o pi-fanctl *.c *.h -O3 -s -w -lpigpio
+set -e
+
+# Create build dir
+mkdir -p build
+cd build
+
+# Build pi-fanctl
+cmake ..
+make
