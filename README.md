@@ -1,4 +1,6 @@
 # pi-fanctl
+![CodeQL](https://github.com/Stridsvagn69420/pi-fanctl/actions/workflows/codeql.yml/badge.svg?branch=master)
+
 Raspberry Pi daemon for PWM fan speed control
 
 ## Functionality

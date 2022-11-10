@@ -1,6 +1,6 @@
 {
     "files.associations": {
-        "temp.h": "c",
-        "stdio.h": "c"
+        "*.h": "c",
+        "*.c": "c"
     }
 }

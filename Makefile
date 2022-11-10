@@ -4,7 +4,8 @@ INSTALLDIR = /usr/local/bin
 
 compile:
 	@mkdir -p $(OUTDIR)
-	@cd build; cmake .. -DCMAKE_BUILD_TYPE=Release; make
+	@cmake -B$(OUTDIR) -S.
+	@make -C $(OUTDIR)
 
 install:
 	@cp $(OUTDIR)/$(APPNAME) $(INSTALLDIR)/$(APPNAME)
