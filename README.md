@@ -24,11 +24,14 @@ You can choose between these options:
 As the other options are straightforwards, this section describes how to build it from source. You'll need in addition to `pigpio`:
 * A C compiler like `gcc`.
 * `git` for cloning the source code.
+* `cmake` for the build process
+* GNU `make`
 
 1. Clone the repository: `git clone https://github.com/Stridsvagn69420/pi-fanctl.git`
 2. Go into the cloned repo: `cd pi-fanctl`
-3. Run the build command: `./build.sh`
-4. Install pi-fanctl and the systemd service: `sudo ./install.sh`
+3. Run the build command: `make`
+4. Install pi-fanctl and the systemd service: `sudo make install`
+5. Remove build artifacts with `make clean`
 
 More things will follow. This is WIP.
 
