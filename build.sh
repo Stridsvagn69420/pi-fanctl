@@ -6,5 +6,5 @@ mkdir -p build
 cd build
 
 # Build pi-fanctl
-cmake ..
+cmake .. -DCMAKE_BUILD_TYPE=Release
 make
