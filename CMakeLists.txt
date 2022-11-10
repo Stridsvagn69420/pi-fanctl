@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.18)
 project(pi-fanctl C)
 
 add_executable(pi-fanctl main.c)
