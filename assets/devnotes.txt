@@ -1,5 +1,5 @@
 -Only POSIX/Unix/Linux C to be supported
--pigpio as the GPIO library
+-libgpiod as the GPIO library (works on not just Raspbian but also Arch and Void)
 
 -Button Pins: SCL and GND
 -Shutdown command: poweroff
