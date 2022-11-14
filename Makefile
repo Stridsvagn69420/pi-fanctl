@@ -5,7 +5,7 @@ INSTALLDIR = /usr/local/bin
 compile:
 	@mkdir -p $(OUTDIR)
 	@cmake -B$(OUTDIR) -S.
-	@make -C $(OUTDIR)
+	@cmake --build $(OUTDIR)
 
 install:
 	@cp $(OUTDIR)/$(APPNAME) $(INSTALLDIR)/$(APPNAME)
