@@ -4,7 +4,7 @@ INSTALLDIR = /usr/local/bin
 
 compile:
 	@mkdir -p $(OUTDIR)
-	@cmake -B$(OUTDIR) -S.
+	@cmake -DCMAKE_BUILD_TYPE=Release -B$(OUTDIR) -S.
 	@cmake --build $(OUTDIR)
 
 install:

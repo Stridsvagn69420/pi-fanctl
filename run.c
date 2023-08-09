@@ -3,8 +3,12 @@
 // Write PID file into the daemon run directory
 void write_pid() {
     FILE *fp = fopen(PID_FILE, "w");
-    fputs(getpid(), fp);
-    fclose(fp);
+	if (fp != NULL) {
+		char pidtxt[6];
+		sprintf(pidtxt, "%d", getpid());
+    	fputs(pidtxt, fp);
+    }
+	fclose(fp);
 }
 
 // Create runtime directory in /run
